@@ -1,0 +1,71 @@
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  padding: 30px 0;
+}
+
+.app-header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  margin: 0;
+  font-style: italic;
+}
+
+.app-main {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.reset-button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 30px;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.reset-button:hover {
+  background: white;
+  color: #667eea;
+  transform: scale(1.05);
+}
+
+.app-footer {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .app-header h1 {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+}

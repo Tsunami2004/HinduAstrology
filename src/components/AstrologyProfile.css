@@ -1,0 +1,251 @@
+.profile-container {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.profile-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  padding: 20px 0;
+}
+
+.profile-name {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.profile-intro {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.profile-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rashi-card {
+  border-top: 5px solid #667eea;
+}
+
+.nakshatra-card {
+  border-top: 5px solid #764ba2;
+}
+
+.card-header {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.card-header h3 {
+  color: #333;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.symbol {
+  font-size: 2.5rem;
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.info-item:last-of-type {
+  border-bottom: none;
+}
+
+.label {
+  font-weight: 600;
+  color: #666;
+  min-width: 140px;
+}
+
+.value {
+  color: #333;
+  text-align: right;
+  font-weight: 500;
+}
+
+.traits {
+  padding: 15px 0;
+}
+
+.traits .label {
+  display: block;
+  margin-bottom: 8px;
+  border-bottom: none;
+}
+
+.traits-text {
+  margin: 0;
+  color: #667eea;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.description {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  line-height: 1.6;
+  color: #666;
+}
+
+.description p {
+  margin: 0;
+}
+
+.mantra {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  color: #667eea;
+  border-left: 4px solid #667eea;
+  margin: 15px 0;
+}
+
+.mantra h4 {
+  margin: 0 0 10px 0;
+  color: #667eea;
+  font-size: 1.1rem;
+}
+
+.mantra p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.interesting-facts {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 140, 0, 0.1));
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 4px solid #ffd700;
+}
+
+.interesting-facts h4 {
+  margin: 0 0 10px 0;
+  color: #ff8c00;
+  font-size: 1.1rem;
+}
+
+.interesting-facts ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.interesting-facts li {
+  margin-bottom: 8px;
+  color: #666;
+  line-height: 1.5;
+  position: relative;
+}
+
+.interesting-facts li:before {
+  content: "✨";
+  position: absolute;
+  left: -20px;
+  color: #ffd700;
+}
+
+.compatibility-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-left: 5px solid #ffd700;
+  animation: slideUp 0.6s ease-out;
+}
+
+.compatibility-card h3 {
+  color: #667eea;
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.compatibility-card p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 600px) {
+  .profile-name {
+    font-size: 1.8rem;
+  }
+
+  .profile-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .info-item {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .label {
+    min-width: auto;
+  }
+
+  .value {
+    text-align: left;
+  }
+}
